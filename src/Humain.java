@@ -1,7 +1,7 @@
 public class Humain {
 
-    private String nom;
-    private static final String boisson = "eau";
+    protected String nom;
+    protected String boisson = "eau";
 
     Humain (String nom) {
         this.nom = nom;
@@ -12,11 +12,11 @@ public class Humain {
     }
 
     public void presenter() {
-        System.out.println("Bonjour, je m'appelle " + this.nom + " et je bois de l'eau");
+        System.out.println(this.nom + " - Bonjour, je m'appelle " + this.nom + " et je bois de l'eau");
     }
 
     public void boire () {
-        System.out.println("Ah ! Un bon verre d'eau ! GLOUPS !");
+        System.out.println(this.nom + " - Ah ! Un bon verre d'eau ! GLOUPS !");
     }
 
     public String quel_est_ton_nom() {
