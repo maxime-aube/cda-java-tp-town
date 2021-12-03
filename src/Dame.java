@@ -14,20 +14,20 @@ public class Dame extends Humain {
         this.couleurRobe = couleur;
     }
 
-    public void parle (String texte) {
+    public void parler(String texte) {
         if (texte.length() > 0) System.out.println(this.nom + " - " + texte + " Regardez-moi !");
     }
 
     public void presenter() {
-        this.parle("Bonjour, je m'appelle " + nom + " et je bois du " + boisson + ".");
-        this.parle("Je porte aussi une robe de couleur " + couleurRobe + ". Regardez ma belle robe.");
+        this.parler("Bonjour, je m'appelle " + nom + " et je bois du " + boisson + ".");
+        this.parler("Je porte aussi une robe de couleur " + couleurRobe + ". Regardez ma belle robe.");
     }
 
     /**
      * kidnapper la dame
      */
     public void kidnapper() {
-        this.parle("Oh ! On me kidnappe ! Aaah je hurle !");
+        this.parler("Oh ! On me kidnappe ! Aaah je hurle !");
         this.libre = false;
     }
 
@@ -35,7 +35,7 @@ public class Dame extends Humain {
      * libérer la dame
      */
     public void liberer(Cowboy cowboy) {
-        this.parle("Merci " + cowboy.quel_est_ton_nom() + " de m'avoir libérée !");
+        this.parler("Merci " + cowboy.quel_est_ton_nom() + " de m'avoir libérée !");
         this.libre = true;
     }
 
@@ -43,7 +43,7 @@ public class Dame extends Humain {
      * changer de robe
      */
     public void changerRobe(String couleur) {
-        this.parle("Regardez ma nouvelle robe " + couleur + " !");
+        this.parler("Regardez ma nouvelle robe " + couleur + " !");
     }
 
     public String quel_est_ton_nom() {

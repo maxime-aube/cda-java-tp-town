@@ -9,18 +9,18 @@ public class Cowboy extends Humain {
     }
 
     public void presenter() {
-        this.parle("Bonjour, je m'appelle " + nom + " et je bois du " + boisson + ".");
-        this.parle("On dit de moi que je suis " + this.trait + ".");
-        this.parle("La taille de ma popularité est de " + this.popularite + " !");
+        this.parler("Bonjour, je m'appelle " + this.quel_est_ton_nom() + " et je bois du " + boisson + ".");
+        this.parler("On dit de moi que je suis " + this.trait + ".");
+        this.parler("La taille de ma popularité est de " + this.popularite + " !");
     }
 
     public void tirer (Brigand brigand) {
-        this.parle("Tiens bollos !");
-        System.out.println("<narrateur> - Le " + this.trait + " " + this.nom + " tire sur " + brigand.nom + ". PAN !");
+        this.parler("Tiens bollos !");
+        Narrateur.raconter("Le " + this.trait + " " + this.nom + " tire sur " + brigand.nom + ". PAN !");
     }
 
     public void liberer (Dame dame) {
-        this.parle(dame.quel_est_ton_nom() + " vous êtes libre et bientôt je vous flatterai selon la tradition.");
+        this.parler(dame.quel_est_ton_nom() + " vous êtes libre et bientôt je vous flatterai selon la tradition.");
         dame.liberer(this);
         this.popularite++;
     }

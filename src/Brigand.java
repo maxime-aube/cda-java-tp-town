@@ -2,8 +2,8 @@ public class Brigand extends Humain {
 
     public String look = "méchant";
     private int nbDame;
-    private int recompense = 100;
-    private boolean imprisoned;
+    public int recompense = 100;
+    private boolean imprisoned = false;
 
     Brigand (String nom) {
         super(nom);
@@ -12,9 +12,9 @@ public class Brigand extends Humain {
 
     // Bonjour, je suis Bob le m ́echant et j’aime le Tord-Boyau
     public void presenter() {
-        this.parle("Héhé ! Moi c'est " + this.quel_est_ton_nom() + " et j'aime le " + this.boisson);
-        this.parle("J'ai l’air " + this.look + " et j’ai déjà kidnappé " + this.nbDame + " dames !");
-        this.parle("Ma tête est mise à prix à " + this.recompense + "$ ! Pas mal hein ?");
+        this.parler("Héhé ! Moi c'est " + this.quel_est_ton_nom() + " et j'aime le " + this.boisson);
+        this.parler("J'ai l’air " + this.look + " et j’ai déjà kidnappé " + this.nbDame + " dames !");
+        this.parler("Ma tête est mise à prix à " + this.recompense + "$ ! Pas mal hein ?");
     }
 
     /**
@@ -22,7 +22,7 @@ public class Brigand extends Humain {
      * @param dame
      */
     public void kidnapper (Dame dame) {
-        this.parle("Ah ah ! " + dame.quel_est_ton_nom() + ", tu es mienne désormais !");
+        this.parler("Ah ah ! " + dame.quel_est_ton_nom() + ", tu es mienne désormais !");
         dame.kidnapper();
         this.nbDame++;
     }
@@ -32,7 +32,7 @@ public class Brigand extends Humain {
      * @param cowbow
      */
     public void emprisonner (Cowboy cowbow) {
-        this.parle("Damned, je suis fait ! " + cowbow.quel_est_ton_nom() + ", tu m’as troué le cuir !");
+        this.parler("Damned, je suis fait ! " + cowbow.quel_est_ton_nom() + ", tu m’as troué le cuir !");
         this.imprisoned = true;
     }
 

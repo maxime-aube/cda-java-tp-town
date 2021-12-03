@@ -13,12 +13,12 @@ public class Barman extends Humain {
         this.bar = bar;
     }
 
-    public void parle(String texte) {
+    public void parler(String texte) {
         if (texte.length() > 0) System.out.println(this.nom + " - " + texte + " M'voyez...");
     }
 
     public void presenter() {
-        this.parle("Je suis Ma' la barmaid de " + this.getBar() + " et je ne jure que pas le Vin.");
+        this.parler("Je suis Ma' la barmaid de " + this.getBar() + " et je ne jure que pas le Vin.");
     }
 
     public String getBar() {
@@ -27,6 +27,6 @@ public class Barman extends Humain {
     }
 
     public void servir (Humain client) {
-        System.out.println("<narrateur> - " + this.nom + " sert un verre de " + client.quelle_est_ta_boisson() + " à " + client.quel_est_ton_nom() + ".");
+        Narrateur.raconter(this.nom + " sert un verre de " + client.quelle_est_ta_boisson() + " à " + client.quel_est_ton_nom() + ".");
     }
 }
