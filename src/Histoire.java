@@ -32,8 +32,19 @@ public class Histoire {
 
         Narrateur.raconter("THE END (?)");
 
+        /*
         Sherif sherif = new Sherif("Carmelita");
         System.out.println(sherif.quel_est_ton_nom());
         sherif.rechercher(brigand);
+         */
+
+        /*
+        exo 1.7
+        Cowboy clint = new Sherif("Clint");
+        clint.presenter();
+        clint.coffrer(brigand);
+        erreur variable clint of type Cowboy
+        */
+
     }
 }

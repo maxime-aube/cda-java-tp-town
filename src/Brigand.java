@@ -10,7 +10,6 @@ public class Brigand extends Humain {
         this.boisson = "tord-boyaux";
     }
 
-    // Bonjour, je suis Bob le m ́echant et j’aime le Tord-Boyau
     public void presenter() {
         this.parler("Héhé ! Moi c'est " + this.quel_est_ton_nom() + " et j'aime le " + this.boisson);
         this.parler("J'ai l’air " + this.look + " et j’ai déjà kidnappé " + this.nbDame + " dames !");
