@@ -12,7 +12,7 @@ public class Humain {
     }
 
     public void presenter() {
-        System.out.println(this.nom + " - Bonjour, je m'appelle " + this.nom + " et je bois de l'" + this.boisson);
+        this.parle("Bonjour, je m'appelle " + this.nom + " et je bois de l'" + this.boisson + ".");
     }
 
     public void boire () {

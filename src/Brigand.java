@@ -12,9 +12,9 @@ public class Brigand extends Humain {
 
     // Bonjour, je suis Bob le m ́echant et j’aime le Tord-Boyau
     public void presenter() {
-        System.out.println(this.nom + " - Héhé ! Moi c'est " + this.quel_est_ton_nom() + " et j'aime le " + this.boisson);
-        System.out.println(this.nom + " - J'ai l’air " + this.look + " et j’ai déjà kidnappé " + this.nbDame + " dames !");
-        System.out.println(this.nom + " - Ma tête est mise à prix " + this.recompense + "$ !");
+        this.parle("Héhé ! Moi c'est " + this.quel_est_ton_nom() + " et j'aime le " + this.boisson);
+        this.parle("J'ai l’air " + this.look + " et j’ai déjà kidnappé " + this.nbDame + " dames !");
+        this.parle("Ma tête est mise à prix à " + this.recompense + "$ ! Pas mal hein ?");
     }
 
     /**
@@ -32,7 +32,7 @@ public class Brigand extends Humain {
      * @param cowbow
      */
     public void emprisonner (Cowboy cowbow) {
-        this.parle("Damned, je suis fait ! " + cowbow.quel_est_ton_nom() + ", tu m’as eu !");
+        this.parle("Damned, je suis fait ! " + cowbow.quel_est_ton_nom() + ", tu m’as troué le cuir !");
         this.imprisoned = true;
     }
 

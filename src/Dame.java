@@ -8,16 +8,26 @@ public class Dame extends Humain {
         this.boisson = "lait";
     }
 
+    Dame (String nom, String couleur) {
+        super(nom);
+        this.boisson = "lait";
+        this.couleurRobe = couleur;
+    }
+
+    public void parle (String texte) {
+        if (texte.length() > 0) System.out.println(this.nom + " - " + texte + " Regardez-moi !");
+    }
+
     public void presenter() {
-        super.presenter();
-        System.out.println(this.nom + " - Je porte une robe de couleur " + this.couleurRobe);
+        this.parle("Bonjour, je m'appelle " + nom + " et je bois du " + boisson + ".");
+        this.parle("Je porte aussi une robe de couleur " + couleurRobe + ". Regardez ma belle robe.");
     }
 
     /**
      * kidnapper la dame
      */
     public void kidnapper() {
-        this.parle("On me kidnappe ! Aaah je hurle !");
+        this.parle("Oh ! On me kidnappe ! Aaah je hurle !");
         this.libre = false;
     }
 
