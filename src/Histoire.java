@@ -5,28 +5,28 @@ public class Histoire {
         // LE PITCH
         Humain narrateur = new Humain("<narrateur>");
 
-        Cowboy delo = new Cowboy("Jean"); // the nerd
-        Dame jessicah = new Dame("Jessicah"); // the biatch
-        Brigand marc = new Brigand("Marc"); // and the thug
+        Cowboy cowboy = new Cowboy("Boubi"); // the nerd
+        Dame dame = new Dame("Jessicah"); // the biatch
+        Brigand brigand = new Brigand("Marc"); // and the thug
 
         // Histoire : acte I scène 1
         narrateur.parle("Il était une fois à Java Town...");
-        delo.presenter();
-        delo.boire();
-        narrateur.parle("Lorsque soudain...");
-        marc.parle("Héhé je suis méchaaant !");
-        narrateur.parle("Un thug sauvage fait son entrée");
-        marc.kidnapper(jessicah);
+        dame.presenter();
+        cowboy.presenter();
+        cowboy.boire();
+        narrateur.parle("Lorsque soudain, un thug sauvage entre en scène");
+        brigand.presenter();
+        brigand.kidnapper(dame);
         narrateur.parle("Mais que va faire le héro ?!");
 
         // Histoire : acte I scène 2
-        delo.tirer(marc);
-        marc.emprisonner(delo);
-        delo.liberer(jessicah);
+        cowboy.tirer(brigand);
+        brigand.emprisonner(cowboy);
+        cowboy.liberer(dame);
 
         // Histoire : acte I scène 3
-        narrateur.parle("Un peu plus tard, à Java Town. " + delo.nom + " a flatté " + jessicah.nom + " selon la tradition.");
-        jessicah.changerRobe("orange");
+        narrateur.parle("Un peu plus tard, à Java Town. " + cowboy.quel_est_ton_nom() + " a flatté " + dame.quel_est_ton_nom() + " selon la tradition.");
+        dame.changerRobe("orange");
         narrateur.parle("THE END (?)");
     }
 }

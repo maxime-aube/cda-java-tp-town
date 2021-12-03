@@ -5,6 +5,13 @@ public class Cowboy extends Humain {
 
     Cowboy(String nom) {
         super(nom);
+        this.boisson = "whisky";
+    }
+
+    public void presenter() {
+        super.presenter();
+        System.out.println(this.nom + " - On dit de moi que je suis " + this.trait + ".");
+        System.out.println(this.nom + " - La taille de ma popularité est de " + this.popularite + " !");
     }
 
     public void tirer (Brigand brigand) {
@@ -13,7 +20,7 @@ public class Cowboy extends Humain {
     }
 
     public void liberer (Dame dame) {
-        this.parle("Dame " + dame.nom + " vous êtes libre et bientôt je vous flatterai selon la tradition.");
+        this.parle(dame.quel_est_ton_nom() + " vous êtes libre et bientôt je vous flatterai selon la tradition.");
         dame.liberer(this);
         this.popularite++;
     }

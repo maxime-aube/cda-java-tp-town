@@ -12,11 +12,11 @@ public class Humain {
     }
 
     public void presenter() {
-        System.out.println(this.nom + " - Bonjour, je m'appelle " + this.nom + " et je bois de l'eau");
+        System.out.println(this.nom + " - Bonjour, je m'appelle " + this.nom + " et je bois de l'" + this.boisson);
     }
 
     public void boire () {
-        System.out.println(this.nom + " - Ah ! Un bon verre d'eau ! GLOUPS !");
+        System.out.println(this.nom + " - Ah ! Un bon verre d'" + this.boisson + " ! GLOUPS !");
     }
 
     public String quel_est_ton_nom() {

@@ -5,6 +5,12 @@ public class Dame extends Humain {
 
     Dame (String nom) {
         super(nom);
+        this.boisson = "lait";
+    }
+
+    public void presenter() {
+        super.presenter();
+        System.out.println(this.nom + " - Je porte une robe de couleur " + this.couleurRobe);
     }
 
     /**
@@ -19,7 +25,7 @@ public class Dame extends Humain {
      * libérer la dame
      */
     public void liberer(Cowboy cowboy) {
-        this.parle("Merci " + cowboy.nom + " de m'avoir libérée !");
+        this.parle("Merci " + cowboy.quel_est_ton_nom() + " de m'avoir libérée !");
         this.libre = true;
     }
 
@@ -28,5 +34,9 @@ public class Dame extends Humain {
      */
     public void changerRobe(String couleur) {
         this.parle("Regardez ma nouvelle robe " + couleur + " !");
+    }
+
+    public String quel_est_ton_nom() {
+        return "Miss " + this.nom;
     }
 }
