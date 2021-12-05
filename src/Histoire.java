@@ -63,5 +63,12 @@ public class Histoire {
 //        femmeBrigand.presenter();
 //        femmeBrigand.kidnapper(dame);
 //        femmeBrigand.emprisonner(cowboy);
+
+        /*
+        exo 2.5 classe Indien
+         */
+//        Indien indien = new Indien("Pemanuwi");
+//        indien.scalper(dame);
+//        indien.scalper(cowboy);
     }
 }

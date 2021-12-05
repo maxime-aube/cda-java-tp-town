@@ -1,4 +1,4 @@
-public class Brigand extends Humain implements HorsLaLoi {
+public class Brigand extends Humain implements HorsLaLoi, VisagePale {
 
     // properties
     public String look = "méchant";
@@ -54,5 +54,9 @@ public class Brigand extends Humain implements HorsLaLoi {
 
     public String getName() {
         return this.nom + " le " + this.look;
+    }
+
+    public void scalp() {
+        this.parler("Aïe ma tête !");
     }
 }

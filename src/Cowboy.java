@@ -1,4 +1,4 @@
-public class Cowboy extends Humain {
+public class Cowboy extends Humain implements VisagePale {
 
     public int popularite = 0;
     public String trait = "vaillant";
@@ -23,5 +23,9 @@ public class Cowboy extends Humain {
         this.parler(dame.getName() + " vous êtes libre et bientôt je vous flatterai selon la tradition.");
         dame.liberer(this);
         this.popularite++;
+    }
+
+    public void scalp() {
+        this.parler("Aïe ma tête !");
     }
 }

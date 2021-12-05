@@ -1,4 +1,4 @@
-public class Dame extends Humain {
+public class Dame extends Humain implements VisagePale {
 
     protected String couleurRobe = "blanche";
     protected boolean libre = true;
@@ -48,5 +48,9 @@ public class Dame extends Humain {
 
     public String getName() {
         return "Miss " + this.nom;
+    }
+
+    public void scalp() {
+        this.parler("Aïe ma tête !");
     }
 }
