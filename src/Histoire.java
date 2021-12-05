@@ -27,7 +27,7 @@ public class Histoire {
         cowboy.liberer(dame);
 
         // Histoire : acte I scène 3
-        Narrateur.raconter("Un peu plus tard, à Java Town. " + cowboy.quel_est_ton_nom() + " a bien flatté " + dame.quel_est_ton_nom() + ".");
+        Narrateur.raconter("Un peu plus tard, à Java Town. " + cowboy.getName() + " a bien flatté " + dame.getName() + ".");
         dame.changerRobe("orange");
 
         Narrateur.raconter("THE END (?)");
@@ -46,5 +46,14 @@ public class Histoire {
         erreur variable clint of type Cowboy
         */
 
+        /*
+        exo 2.3 test classe Ripoux
+         */
+//        Ripoux ripoux = new Ripoux("Riri");
+//        ripoux.presenter();
+//        System.out.println("emprisonné : " + ripoux.isImprisoned());
+//        ripoux.kidnapper(dame);
+//        ripoux.coffrer(ripoux); // lol
+//        System.out.println("emprisonné : " + ripoux.isImprisoned());
     }
 }

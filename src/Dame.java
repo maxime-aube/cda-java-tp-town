@@ -35,7 +35,7 @@ public class Dame extends Humain {
      * libérer la dame
      */
     public void liberer(Cowboy cowboy) {
-        this.parler("Merci " + cowboy.quel_est_ton_nom() + " de m'avoir libérée !");
+        this.parler("Merci " + cowboy.getName() + " de m'avoir libérée !");
         this.libre = true;
     }
 
@@ -46,7 +46,7 @@ public class Dame extends Humain {
         this.parler("Regardez ma nouvelle robe " + couleur + " !");
     }
 
-    public String quel_est_ton_nom() {
+    public String getName() {
         return "Miss " + this.nom;
     }
 }

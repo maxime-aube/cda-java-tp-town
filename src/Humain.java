@@ -19,11 +19,11 @@ public class Humain {
         System.out.println(this.nom + " - Ah ! Un bon verre d'" + this.boisson + " ! GLOUPS !");
     }
 
-    public String quel_est_ton_nom() {
+    public String getName() {
         return this.nom;
     }
 
-    public String quelle_est_ta_boisson() {
+    public String getBoisson() {
         return this.boisson;
     }
 }

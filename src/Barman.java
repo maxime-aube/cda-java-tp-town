@@ -27,6 +27,6 @@ public class Barman extends Humain {
     }
 
     public void servir (Humain client) {
-        Narrateur.raconter(this.nom + " sert un verre de " + client.quelle_est_ta_boisson() + " à " + client.quel_est_ton_nom() + ".");
+        Narrateur.raconter(this.nom + " sert un verre de " + client.getBoisson() + " à " + client.getName() + ".");
     }
 }
