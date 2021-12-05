@@ -1,7 +1,7 @@
 public class Dame extends Humain {
 
-    private String couleurRobe = "blanche";
-    private boolean libre = true;
+    protected String couleurRobe = "blanche";
+    protected boolean libre = true;
 
     Dame (String nom) {
         super(nom);

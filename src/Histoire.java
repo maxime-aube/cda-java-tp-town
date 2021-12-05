@@ -55,5 +55,13 @@ public class Histoire {
 //        ripoux.kidnapper(dame);
 //        ripoux.coffrer(ripoux); // lol
 //        System.out.println("emprisonné : " + ripoux.isImprisoned());
+
+        /*
+        exo 2.4 test classe FemmeBrigan
+         */
+//        FemmeBrigand femmeBrigand = new FemmeBrigand("Calamity Jane");
+//        femmeBrigand.presenter();
+//        femmeBrigand.kidnapper(dame);
+//        femmeBrigand.emprisonner(cowboy);
     }
 }
